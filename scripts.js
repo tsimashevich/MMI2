@@ -312,24 +312,24 @@ document.getElementById('input-btn').addEventListener('click', () => {
 
     drawX(
         [
-            { label: `Эмпирические данные`, data: Object.values(xCount).map((num) => num / N), backgroundColor: '#0F5EE1', type: 'bar' },
-            { label: `Теоретические данные`, data: xProbability, backgroundColor: '#F7F400', type: 'bar' }
+            { label: `Эмпирические данные`, data: Object.values(xCount).map((num) => num / N), backgroundColor: '#FF5E5E', type: 'bar' },
+            { label: `Теоретические данные`, data: xProbability, backgroundColor: '#5B806F', type: 'bar' }
         ],
         Object.keys(xCount).map((Xi) => `Xi = ${Xi}` )
     );
 
     drawY(
         [
-            { label: `Эмпирические данные`, data: Object.values(yCount).map((num) => num / N), backgroundColor: '#F7F400', type: 'bar' },
-            { label: `Теоретические данные`, data: yProbability, backgroundColor: '#0F5EE1', type: 'bar' }
+            { label: `Эмпирические данные`, data: Object.values(yCount).map((num) => num / N), backgroundColor: '#FF5E5E', type: 'bar' },
+            { label: `Теоретические данные`, data: yProbability, backgroundColor: '#5B806F', type: 'bar' }
         ],
         Object.keys(yCount).map((Yj) => `Yj = ${Yj}` )
     );
 
     drawXY(
         [
-            { label: `Эмпирические данные`, data: [].concat(...сonditionalProbabilities), backgroundColor: '#0F5EE1', type: 'bar' },
-            { label: `Теоретические данные`, data: [].concat(...yProbabilityConditional), backgroundColor: '#F7F400', type: 'bar' },
+            { label: `Эмпирические данные`, data: [].concat(...сonditionalProbabilities), backgroundColor: '#FF5E5E', type: 'bar' },
+            { label: `Теоретические данные`, data: [].concat(...yProbabilityConditional), backgroundColor: '#5B806F', type: 'bar' },
         ],
         pairs
     );
